@@ -157,6 +157,8 @@ GEM
     puma (4.3.7-java)
       nio4r (~> 2.0)
     rack (2.2.3)
+    rack-cors (1.1.1)
+      rack (>= 2.0.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.0.3.4)
@@ -211,7 +213,7 @@ GEM
     thor (1.0.1)
     thread_safe (0.3.6)
     thread_safe (0.3.6-java)
-    tzinfo (1.2.8)
+    tzinfo (1.2.9)
       thread_safe (~> 0.1)
     tzinfo-data (1.2020.4)
       tzinfo (>= 1.0.0)
@@ -233,12 +235,14 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   byebug
   devise
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
+  rack-cors
   rails (~> 6.0.3, >= 6.0.3.4)
   spring
   spring-watcher-listen (~> 2.0.0)
